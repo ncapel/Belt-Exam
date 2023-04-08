@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plushy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="promo-deal">FREE PHONE GRIP ON SELECT PURCHASES</p>
+    <div class="container">
+        <div class="header">
+            <!-- CONSUMER FUNCTIONS ROW -->
+            <div class="cons-funcs row">
+                <h1>PlushStar</h1>
+                <form class="header-form">
+                    <input type="text" name="srch-bar" id="srch-bar" placeholder="Search">
+                </form>
+                <div class="row">
+                    <p class="cart-items">0</p>
+                    <img src="assets/images/cart-dark.png" class="cart-icon" alt="cart-icon">
+                </div>
+            </div>
+            <!-- NAV BAR -->
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">New</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Products</a>
+                <a href="#">Sales</a>
+                <a href="#">Blog</a>
+                <a href="#" onclick="contactUs()">Contact Us</a>
+            </div>
+        </div>
+        <div class="main-content"> 
+            <!-- STORE DEMOGRAPHICS/INFORMATION -->
+            <div class="store-demographics">
+                <h2 class="banner">Plushy Store</h2>
+                <div class="sorting row">
+                    <p>62 Products, sorted by <span id="sorted-span">Best Selling</span></p>
+                    <form>
+                        <label for="select-sort-type">Sort By</label>
+                        <select name="sort-by" id="select-sort-type" onchange="sortedBy()">
+                            <option value="Best Selling">Best Selling</option>
+                            <option value="Price (low to high)">Price (low to high)</option>
+                            <option value="Price (high to low)">Price (high to low)</option>
+                            <option value="Ratings">Ratings</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <!-- ROW OF PRODUCTS -->
+            <div class="product row">
+                <div class="col">
+                    <img src="assets/images/product-image.png" alt="coming-soon-img" class="product-img">
+                    <div>
+                        <p class="product-name">Mischief Mouse</p>
+                        <button class="buy-btn" onclick="addToCart()">BUY</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/images/product-image.png" alt="coming-soon-img" class="product-img">
+                    <div>
+                        <p class="product-name">Shy Shrew</p>
+                        <button class="buy-btn" onclick="addToCart()">BUY</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/images/product-image.png" alt="coming-soon-img" class="product-img">
+                    <div>
+                        <p class="product-name">Hangry Hamster</p>
+                        <button class="buy-btn" onclick="addToCart()">BUY</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="assets/images/product-image.png" alt="coming-soon-img" class="product-img">
+                    <div>
+                        <p class="product-name">Chilly Chinchilla</p>
+                        <button class="buy-btn" onclick="addToCart()">BUY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>

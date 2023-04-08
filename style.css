@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+.container {
+    width: 70%;
+    margin: 0px auto;
+    box-sizing:border-box;
+    /* border: 3px solid lime; */
+}
+/* ---------- MAIN STRUCTURES ---------- */
+.main-content {
+    margin: 0px auto;
+}
+.header {
+    margin: 10px 0px 15px 0px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* ---------- Consumer Functions ---------- */
+.cons-funcs {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.header-form {
+    width: 70%;
+}
+#srch-bar {
+    width: 100%;
+    padding: 5px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.cart-items {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 22px;
+}
+.cart-icon {
+    width: 40px;
+    transform: scaleX(-1);
+}
+/* ---------- NAV Bar ---------- */
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding: 10px 0px;
+    background-color: #dddddd;
+    box-shadow: 0 0 0 100vmax #dddddd;
+    clip-path: inset(0 -100vmax);
+}
+.nav a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin: 0px 10px;
+
+}
+.nav a:hover {
+    border-bottom: 4px solid #c27ba0;
+}
+/* ---------- Store Demographics Row ---------- */
+.banner {
+    text-align: center;
+    font-size: 40px;
+    background-color:#c27ba0;
+    color:white;
+    padding: 25px 0px;
+    border-radius: 5px;
+}
+.store-demographics .row {
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+.sorting {
+    font-size: 18px;
+}
+.sorting p span {
+    font-weight: bold;;
+}
+.sorting form label {
+    margin-right: 15px;
+}
+select {
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+/* ---------- Product Row ---------- */
+.product {
+    justify-content: space-between;
+}
+.product .col {
+    text-align: center;
+    gap: 25px;
+}
+.buy-btn {
+    padding: 5px 20px;
+    background-color: #c27ba0;
+    color: white;
+    margin: 0px auto;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buy-btn:hover {
+    background-color:#e290bb;
+}
+.product-img {
+    width: 220px;
+    text-align: center;
+}
+.product-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* ---------- TOP PROMO ---------- */
+.promo-deal {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #c27ba0;
+    color:white;
+    border: 3px solid black;
+}
